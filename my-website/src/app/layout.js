@@ -36,7 +36,7 @@ export default function RootLayout({ children }) {
                 </h1>
               </div>
 
-              {/* Profile Section */}
+              {/* Profile or image Section */}
               <div className="flex items-center space-x-2 cursor-pointer group">
                 <div className="relative w-8 h-8 rounded-full overflow-hidden border-2 border-gray-200 group-hover:border-blue-400 transition-colors">
                   <Image
@@ -55,13 +55,13 @@ export default function RootLayout({ children }) {
             </div>
           </header>
 
-          {/* Main Content */}
+          {/* Main Content below the header on the left side the sidebar and right the content */}
           <div className="flex flex-1">
             <Sidebar />
 
             <main className="flex-1 p-4 sm:p-6 overflow-auto z-10">
               <div className="container mx-auto max-w-7xl">
-                {children}
+                 {children}            {/*  // children is the content that will be put in the main content */}
               </div>
             </main>
           </div>
