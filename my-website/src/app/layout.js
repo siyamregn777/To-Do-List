@@ -32,7 +32,7 @@ export default function RootLayout({ children }) {
                     <rect x="21" y="4" width="5" height="20" rx="1" />
                   </svg>
                 </div>
-                <h1 className="text-lg sm:text-xl font-bold text-gray-800 group-hover:text-blue-600 transition-colors">
+                <h1 className="text-lg sm:text-xl font-bold text-gray-800 group-hover:text-blue-600 transition-colors cursor-pointer transition-scale-300">
                   WhatBytes
                 </h1>
               </div>
