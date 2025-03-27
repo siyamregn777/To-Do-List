@@ -16,10 +16,10 @@ export default function RootLayout({ children }) {
       <body className={`${inter.className} antialiased`}>
         <div className="min-h-screen bg-gray-50 text-black flex flex-col">
           {/* Header */}
-          <header className="bg-white border-b border-gray-200 sticky top-0 z-30">
+          <header className="bg-white border-b border-gray-200 sticky top-0 z-50">
             <div className="container mx-auto px-4 sm:px-6 py-3 flex items-center justify-between">
               {/* Logo Section */}
-              <div className="flex items-center space-x-3 group">
+              <div className="flex items-center space-x-3 group ml-12 md:ml-0 ">
                 <div className="w-8 h-8 flex items-center justify-center text-blue-500 group-hover:text-blue-600 transition-colors">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -58,11 +58,10 @@ export default function RootLayout({ children }) {
 
           {/* Main Content */}
           <div className="flex flex-1">
-            {/* Mobile Sidebar Toggle is handled inside the Sidebar component */}
             <Sidebar />
 
             {/* Main Content Area */}
-            <main className="flex-1 p-4 sm:p-6 overflow-auto">
+            <main className="flex-1 p-4 sm:p-6 overflow-auto z-10">
               <div className="container mx-auto max-w-7xl">
                 {children}
               </div>
