@@ -40,7 +40,7 @@ const Sidebar = () => {
 
       {/* Sidebar */}
       <aside
-        className={`fixed top-0 left-0 h-full w-64 bg-white text-black p-5 border-r border-gray-200 transition-all duration-300 ease-in-out z-40 ${
+        className={`fixed top-16 md:top-0 left-0 h-[calc(100vh-4rem)] md:h-full w-64 bg-white text-black p-5 border-r border-gray-200 transition-all duration-300 ease-in-out z-40 ${
           isOpen ? "translate-x-0 shadow-xl" : "-translate-x-full"
         } md:translate-x-0 md:shadow-none md:relative`}
       >
