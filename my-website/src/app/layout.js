@@ -15,10 +15,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${inter.className} antialiased`}>
         <div className="min-h-screen bg-gray-50 text-black flex flex-col">
-          {/* Header */}
           <header className="bg-white border-b border-gray-200 sticky top-0 z-50">
             <div className="container mx-auto px-4 sm:px-6 py-3 flex items-center justify-between">
-              {/* Logo Section */}
+               {/* Logo Section tha is put before the word whatBytes  */}
               <div className="flex items-center space-x-3 group ml-12 md:ml-0 ">
                 <div className="w-8 h-8 flex items-center justify-center text-blue-500 group-hover:text-blue-600 transition-colors">
                   <svg
@@ -41,7 +40,7 @@ export default function RootLayout({ children }) {
               <div className="flex items-center space-x-2 cursor-pointer group">
                 <div className="relative w-8 h-8 rounded-full overflow-hidden border-2 border-gray-200 group-hover:border-blue-400 transition-colors">
                   <Image
-                    src="/IMG_1242    S.JPG" // Replace with your actual image path
+                    src="/IMG_1242    S.JPG" // my photo that put on th top right corner
                     alt="Profile"
                     width={32}
                     height={32}
@@ -60,7 +59,6 @@ export default function RootLayout({ children }) {
           <div className="flex flex-1">
             <Sidebar />
 
-            {/* Main Content Area */}
             <main className="flex-1 p-4 sm:p-6 overflow-auto z-10">
               <div className="container mx-auto max-w-7xl">
                 {children}
@@ -68,7 +66,7 @@ export default function RootLayout({ children }) {
             </main>
           </div>
 
-          {/* Optional Footer */}
+          {/*Footer part  */}
           <footer className="bg-white border-t border-gray-200 py-4">
             <div className="container mx-auto px-4 sm:px-6 text-center text-sm text-gray-500">
               © {new Date().getFullYear()} WhatBytes Dashboard. All rights reserved.
